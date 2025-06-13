@@ -88,6 +88,11 @@ export default function Top() {
       href: "/#carta-recomendaciones",
       icon: "/icons/carta-recomendacion-icon.svg",
     },
+    {
+      name: "Redes Sociales",
+      href: "/#redes-sociales",
+      icon: "/icons/redes-sociales-icon.svg",
+    },
   ];
 
   const { ref, isInView: localInView } = useInView({ threshold: 0.1 });
@@ -202,7 +207,7 @@ export default function Top() {
           localInView ? "" : "fixed top-0 left-0 right-0 z-50"
         } p-4 bg-white dark:bg-gray-800 transition-all duration-300`}
       >
-        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 items-center gap-2 sm:gap-4">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-8 items-center gap-2 sm:gap-4">
           {links.map((link) => {
             return (
               <div key={link.name}>
