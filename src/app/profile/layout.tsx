@@ -57,7 +57,9 @@ export default function RootLayout({
         </ViewProvider>
         <footer className="mt-16 border-t h-[4%] border-gray-300 py-6 text-center text-sm text-gray-600">
           <p className="font-semibold text-gray-700">Emmanuel Morales</p>
-          <p className="mt-1">Desarrollado con Next.js y Tailwind CSS</p>
+          <p className="mt-1">
+            Desarrollado con Next.js, Tailwind CSS y desplegado en Vercel
+          </p>
           <p className="mt-1">
             &copy; {new Date().getFullYear()} Todos los derechos reservados.
           </p>

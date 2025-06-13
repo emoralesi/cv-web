@@ -1072,6 +1072,49 @@ export default function ProfilePage() {
           </p>
         </div>
       </section>
+
+      {/* Redes Sociales Section */}
+      <section id="redes-sociales" className="mb-12 pt-36 lg:pt-20 -mt-16">
+        <hr className="bg-white" />
+        <h2
+          className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
+        >
+          Redes Sociales
+        </h2>
+        <div className="flex flex-col sm:flex-row gap-4 text-gray-700 dark:text-gray-300">
+          <a
+            href="https://www.linkedin.com/in/emmanuel-morales-inzunza-0b5a4a333/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-xl transition"
+          >
+            <img
+              src="/icons/linkedin-icon.svg"
+              alt="LinkedIn"
+              className="h-5 w-5"
+            />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/emoralesi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-xl transition"
+          >
+            <img
+              src="/icons/github-icon.svg"
+              alt="GitHub"
+              className="h-5 w-5"
+            />
+            GitHub
+          </a>
+        </div>
+        <br />
+        <h2 className="bold">
+          Futuros proyectos seran publicados, de momento estan siendo
+          desarrollados y puedes ver su progreso en GitHub !
+        </h2>
+      </section>
     </div>
   );
 }
