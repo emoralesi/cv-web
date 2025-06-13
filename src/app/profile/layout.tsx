@@ -2,6 +2,7 @@ import "@/app/ui/globals.css";
 import type { Metadata } from "next";
 import Top from "../ui/Top";
 import { ViewProvider } from "../context/ViewContext";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Emmanuel Morales CV",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: setThemeScript }} />
       </head>
       <body>
+        <Analytics />
         <ViewProvider>
           <Top />
           <div className="fixed bottom-6 right-6 flex gap-4 z-50">
