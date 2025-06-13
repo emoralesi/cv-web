@@ -9,7 +9,7 @@ import { useView } from "../context/ViewContext";
 import { inter, lusitana, montserrat } from "./fonts";
 
 export default function Top() {
-  const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+  const MaterialUISwitch = styled(Switch)(({}) => ({
     width: 62,
     height: 34,
     padding: 7,
