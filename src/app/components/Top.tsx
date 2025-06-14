@@ -1,15 +1,14 @@
 "use client";
 
 import { useInView } from "@/utils/useIsInViewportContext";
-import { FormControlLabel, styled, Switch } from "@mui/material";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useView } from "../context/ViewContext";
 import { inter, lusitana, montserrat } from "../ui/fonts";
-import ThemeSwitch from "./ThemeSwitch";
-import { useTranslations } from "next-intl";
 import LanguageSelector from "./SelectLenguage";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function Top() {
   const t = useTranslations("Top");
