@@ -1,5 +1,6 @@
 {
   "Top": {
+    "profession": "Full Stack Developer",
     "menu1": "Introduction",
     "menu2": "Work Experience",
     "menu3": "Skills",
@@ -217,8 +218,8 @@
     "allRightsReserved": "All rights reserved.",
     "disclaimer": "Technology logos displayed are registered trademarks of their respective owners and are used here for illustrative purposes only."
   },
-  "position-fixed-cv":{
-    "button1":"View CV",
-    "button2":"Download CV"
+  "position-fixed-cv": {
+    "button1": "View CV",
+    "button2": "Download CV"
   }
 }

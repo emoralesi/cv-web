@@ -96,7 +96,7 @@ export default function Top() {
             <p
               className={`${montserrat.className} font-sans font-normal text-sm sm:text-md md:text-lg`}
             >
-              Desarrollador Full Stack
+              {t("profession")}
             </p>
           </div>
           <div className="flex gap-2 items-center">
