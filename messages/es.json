@@ -1,0 +1,39 @@
+{
+  "Top": {
+    "menu1": "Presentacion",
+    "menu2": "Experiencia Laboral",
+    "menu3": "Competencias",
+    "menu4": "Competencias Tecnicas",
+    "menu5": "Educacion",
+    "menu6": "Idioma",
+    "menu7": "Carta De Recomendacion",
+    "menu8": "Redes Sociales"
+  },
+  "Presentacion": {
+    "sectionTitle": "Presentación",
+    "paragraph1_part1": "Desarrollador Full-Stack con más de 3 años de experiencia, altamente motivado, con una sólida formación técnica y capacidad comprobada para adaptarse a nuevas tecnologías. He trabajado en la consultora ",
+    "companyAligare": "Aligare",
+    "paragraph1_part2": ", donde participé en proyectos para empresas como ",
+    "companyCruzVerde": "Cruz Verde",
+    "companyClaro": "Claro",
+    "companyRipley": "Ripley",
+    "paragraph1_part3": ". En ",
+    "paragraph1_part4": ", desempeñé un rol clave durante 2 años, gracias al alto interés del cliente en mantenerme en su equipo, renovando su contrato con ",
+    "paragraph1_part5": " de manera recurrente. Poseo experiencia en tecnologías como ",
+    "techReact": "React",
+    "techAngular": "Angular",
+    "techNode": "Node.js",
+    "techJava": "Java Spring Boot",
+    "techDotnet": ".NET Core (C#)",
+    "techPostgres": "PostgreSQL",
+    "techMongo": "MongoDB",
+    "techOracle": "Oracle",
+    "techDocker": "Docker",
+    "techJenkins": "Jenkins",
+    "techGit": "Git",
+    "paragraph1_part6": ", lo que me ha permitido desarrollar aplicaciones escalables y eficientes tanto en el frontend como en el backend. Además, tengo conocimientos en la gestión de tareas con ",
+    "techJira": "Jira",
+    "techConfluence": "Confluence",
+    "paragraph1_part7": ". He viajado frecuentemente a Escocia por temas personales, lo que me permitió perfeccionar mi inglés y alcanzar un nivel avanzado. Rendí el examen IELTS Academic en Glasgow, obteniendo un nivel B2."
+  }
+}

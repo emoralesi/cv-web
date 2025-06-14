@@ -1,6 +1,9 @@
 import { inter } from "@/app/ui/fonts";
+import { useTranslations } from "next-intl";
 
 export default function ProfilePage() {
+  const t = useTranslations("Presentacion");
+
   return (
     <div className="px-4 py-8 bg-white text-black dark:bg-gray-800 dark:text-gray-100 m-0 w-auto ">
       {/* Presentacion Section */}
@@ -9,27 +12,24 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Presentación
+          {t("sectionTitle")}
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
           <div>
             <p className="text-gray-700 dark:text-gray-300">
-              Desarrollador Full-Stack con mas de 3 años de experiencia,
-              altamente motivado, con una sólida formación técnica y capacidad
-              comprobada para adaptarse a nuevas tecnologías. He trabajado en la
-              consultora
-              <span className="font-bold"> Aligare</span>, donde participé en
-              proyectos para empresas como
-              <span className="font-bold"> Cruz Verde</span>,{" "}
-              <span className="font-bold">Claro</span> y{" "}
-              <span className="font-bold">Ripley</span>. En
-              <span className="font-bold"> Ripley</span>, desempeñé un rol clave
-              durante 2 años, gracias al alto interés del cliente en mantenerme
-              en su equipo, renovando su contrato con
-              <span className="font-bold"> Aligare</span> de manera recurrente.
-              Poseo experiencia en tecnologías como{" "}
+              {t("paragraph1_part1")}
+              <span className="font-bold">{t("companyAligare")}</span>
+              {t("paragraph1_part2")}
+              <span className="font-bold">{t("companyCruzVerde")}</span>,{" "}
+              <span className="font-bold">{t("companyClaro")}</span> y{" "}
+              <span className="font-bold">{t("companyRipley")}</span>.
+              {t("paragraph1_part3")}
+              <span className="font-bold">{t("companyRipley")}</span>
+              {t("paragraph1_part4")}
+              <span className="font-bold">{t("companyAligare")}</span>
+              {t("paragraph1_part5")}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                React{" "}
+                {t("techReact")}{" "}
                 <img
                   src="/icons/react-icon.svg"
                   alt="React"
@@ -38,7 +38,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Angular{" "}
+                {t("techAngular")}{" "}
                 <img
                   src="/icons/angular-icon.svg"
                   alt="Angular"
@@ -47,7 +47,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Node.js{" "}
+                {t("techNode")}{" "}
                 <img
                   src="/icons/nodejs-icon.svg"
                   alt="Node.js"
@@ -56,7 +56,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Java Spring Boot{" "}
+                {t("techJava")}{" "}
                 <img
                   src="/icons/java-icon.svg"
                   alt="Java Spring Boot"
@@ -65,7 +65,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                .NET Core (C#){" "}
+                {t("techDotnet")}{" "}
                 <img
                   src="/icons/dotnet-icon.svg"
                   alt=".NET Core"
@@ -74,7 +74,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                PostgreSQL{" "}
+                {t("techPostgres")}{" "}
                 <img
                   src="/icons/postgresql-icon.svg"
                   alt="PostgreSQL"
@@ -83,7 +83,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                MongoDB{" "}
+                {t("techMongo")}{" "}
                 <img
                   src="/icons/mongodb-icon.svg"
                   alt="MongoDB"
@@ -92,7 +92,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Oracle{" "}
+                {t("techOracle")}{" "}
                 <img
                   src="/icons/oracle-icon.svg"
                   alt="Oracle"
@@ -101,7 +101,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Docker{" "}
+                {t("techDocker")}{" "}
                 <img
                   src="/icons/docker-icon.svg"
                   alt="Docker"
@@ -110,7 +110,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Jenkins{" "}
+                {t("techJenkins")}{" "}
                 <img
                   src="/icons/jenkins-icon.svg"
                   alt="Jenkins"
@@ -119,36 +119,32 @@ export default function ProfilePage() {
               </span>{" "}
               y{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Git{" "}
+                {t("techGit")}{" "}
                 <img
                   src="/icons/git-icon.svg"
                   alt="Git"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>
-              , lo que me ha permitido desarrollar aplicaciones escalables y
-              eficientes tanto en el frontend como en el backend. Además, tengo
-              conocimientos en la gestión de tareas con{" "}
+              , {t("paragraph1_part6")}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Jira{" "}
+                {t("techJira")}{" "}
                 <img
                   src="/icons/jira-icon.svg"
                   alt="Jira"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>{" "}
-              y documentación en{" "}
+              y{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Confluence{" "}
+                {t("techConfluence")}{" "}
                 <img
                   src="/icons/confluence-icon.svg"
                   alt="Confluence"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>
-              . He viajado frecuentemente a Escocia por temas personales, lo que
-              me permitió perfeccionar mi inglés y alcanzar un nivel avanzado.
-              Rendí el examen IELTS Academic en Glasgow, obteniendo un nivel B2.
+              .{t("paragraph1_part7")}
             </p>
           </div>
         </div>

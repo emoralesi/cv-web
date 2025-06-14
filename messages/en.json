@@ -1,0 +1,39 @@
+{
+  "Top": {
+    "menu1": "Introduction",
+    "menu2": "Work Experience",
+    "menu3": "Skills",
+    "menu4": "Technical Skills",
+    "menu5": "Education",
+    "menu6": "Language",
+    "menu7": "Letter of Recommendation",
+    "menu8": "Social Network"
+  },
+  "Presentacion": {
+    "sectionTitle": "Presentation",
+    "paragraph1_part1": "Full-Stack developer with over 3 years of experience, highly motivated, with strong technical background and proven ability to adapt to new technologies. I have worked at the consultancy ",
+    "companyAligare": "Aligare",
+    "paragraph1_part2": ", participating in projects for companies such as ",
+    "companyCruzVerde": "Cruz Verde",
+    "companyClaro": "Claro",
+    "companyRipley": "Ripley",
+    "paragraph1_part3": ". At ",
+    "paragraph1_part4": ", I played a key role for 2 years, due to the client's strong interest in keeping me on their team, renewing their contract with ",
+    "paragraph1_part5": " regularly. I have experience with technologies such as ",
+    "techReact": "React",
+    "techAngular": "Angular",
+    "techNode": "Node.js",
+    "techJava": "Java Spring Boot",
+    "techDotnet": ".NET Core (C#)",
+    "techPostgres": "PostgreSQL",
+    "techMongo": "MongoDB",
+    "techOracle": "Oracle",
+    "techDocker": "Docker",
+    "techJenkins": "Jenkins",
+    "techGit": "Git",
+    "paragraph1_part6": ", enabling me to develop scalable and efficient applications both frontend and backend. Also, I have knowledge in task management with ",
+    "techJira": "Jira",
+    "techConfluence": "Confluence",
+    "paragraph1_part7": ". I frequently traveled to Scotland for personal reasons, which allowed me to perfect my English and reach an advanced level. I took the IELTS Academic exam in Glasgow, achieving a B2 level."
+  }
+}
