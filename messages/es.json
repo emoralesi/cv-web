@@ -211,5 +211,14 @@
       "sectionTitle": "Redes Sociales",
       "futureProjects": "Futuros proyectos seran publicados, de momento estan siendo desarrollados y puedes ver su progreso en GitHub !"
     }
+  },
+  "Footer": {
+    "developedWith": "Desarrollado con Next.js, Tailwind CSS y desplegado en Vercel",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "disclaimer": "Los logotipos de tecnologías mostrados son marcas registradas de sus respectivos dueños y se utilizan aquí únicamente con fines ilustrativos."
+  },
+  "position-fixed-cv": {
+    "button1": "Ver CV",
+    "button2": "Descargar CV"
   }
 }

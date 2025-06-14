@@ -6,6 +6,8 @@ import { Providers } from "../../providers";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Footer from "@/app/components/Footer";
+import FloatingCV from "@/app/components/FloatingCV";
 
 export const metadata: Metadata = {
   title: "Emmanuel Morales CV",
@@ -31,42 +33,10 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <ViewProvider>
               <Top />
-              <div className="fixed bottom-6 right-6 flex gap-4 z-50">
-                <a
-                  href="/pdf/CV_Emmanuel_Morales_I.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-colors duration-300"
-                >
-                  Ver CV
-                </a>
-
-                <a
-                  href="/pdf/CV_Emmanuel_Morales_I.pdf"
-                  download
-                  className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-colors duration-300"
-                >
-                  Descargar CV
-                </a>
-              </div>
-
+              <FloatingCV/>
               <main>{children}</main>
             </ViewProvider>
-            <footer className="mt-16 border-t h-[4%] border-gray-300 py-6 text-center text-sm text-gray-600">
-              <p className="font-semibold text-gray-700">Emmanuel Morales</p>
-              <p className="mt-1">
-                Desarrollado con Next.js, Tailwind CSS y desplegado en Vercel
-              </p>
-              <p className="mt-1">
-                &copy; {new Date().getFullYear()} Todos los derechos reservados.
-              </p>
-
-              <p className="mt-1">
-                Los logotipos de tecnologías mostrados son marcas registradas de
-                sus respectivos dueños y se utilizan aquí únicamente con fines
-                ilustrativos.
-              </p>
-            </footer>
+            <Footer />
           </NextIntlClientProvider>
         </Providers>
       </body>

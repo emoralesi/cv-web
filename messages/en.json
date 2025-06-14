@@ -211,5 +211,14 @@
       "sectionTitle": "Social Networks",
       "futureProjects": "Future projects will be published; they are currently under development, and you can see their progress on GitHub!"
     }
+  },
+  "Footer": {
+    "developedWith": "Developed with Next.js, Tailwind CSS, and deployed on Vercel",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimer": "Technology logos displayed are registered trademarks of their respective owners and are used here for illustrative purposes only."
+  },
+  "position-fixed-cv":{
+    "button1":"View CV",
+    "button2":"Download CV"
   }
 }
