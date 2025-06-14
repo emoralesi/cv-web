@@ -1,6 +1,9 @@
 import { inter } from "@/app/ui/fonts";
+import { useTranslations } from "next-intl";
 
 export default function ProfilePage() {
+  const t = useTranslations("Page");
+
   return (
     <div className="px-4 py-8 bg-white text-black dark:bg-gray-800 dark:text-gray-100 m-0 w-auto ">
       {/* Presentacion Section */}
@@ -9,27 +12,38 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Presentación
+          {t("Presentacion.sectionTitle")}
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
           <div>
             <p className="text-gray-700 dark:text-gray-300">
-              Desarrollador Full-Stack con mas de 3 años de experiencia,
-              altamente motivado, con una sólida formación técnica y capacidad
-              comprobada para adaptarse a nuevas tecnologías. He trabajado en la
-              consultora
-              <span className="font-bold"> Aligare</span>, donde participé en
-              proyectos para empresas como
-              <span className="font-bold"> Cruz Verde</span>,{" "}
-              <span className="font-bold">Claro</span> y{" "}
-              <span className="font-bold">Ripley</span>. En
-              <span className="font-bold"> Ripley</span>, desempeñé un rol clave
-              durante 2 años, gracias al alto interés del cliente en mantenerme
-              en su equipo, renovando su contrato con
-              <span className="font-bold"> Aligare</span> de manera recurrente.
-              Poseo experiencia en tecnologías como{" "}
+              {t("Presentacion.paragraph1_part1")}
+              <span className="font-bold">
+                {t("Presentacion.companyAligare")}
+              </span>
+              {t("Presentacion.paragraph1_part2")}
+              <span className="font-bold">
+                {t("Presentacion.companyCruzVerde")}
+              </span>
+              ,{" "}
+              <span className="font-bold">
+                {t("Presentacion.companyClaro")}
+              </span>{" "}
+              y{" "}
+              <span className="font-bold">
+                {t("Presentacion.companyRipley")}
+              </span>
+              .{t("Presentacion.paragraph1_part3")}
+              <span className="font-bold">
+                {t("Presentacion.companyRipley")}
+              </span>
+              {t("Presentacion.paragraph1_part4")}
+              <span className="font-bold">
+                {t("Presentacion.companyAligare")}
+              </span>
+              {t("Presentacion.paragraph1_part5")}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                React{" "}
+                {t("Presentacion.techReact")}{" "}
                 <img
                   src="/icons/react-icon.svg"
                   alt="React"
@@ -38,7 +52,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Angular{" "}
+                {t("Presentacion.techAngular")}{" "}
                 <img
                   src="/icons/angular-icon.svg"
                   alt="Angular"
@@ -47,7 +61,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Node.js{" "}
+                {t("Presentacion.techNode")}{" "}
                 <img
                   src="/icons/nodejs-icon.svg"
                   alt="Node.js"
@@ -56,7 +70,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Java Spring Boot{" "}
+                {t("Presentacion.techJava")}{" "}
                 <img
                   src="/icons/java-icon.svg"
                   alt="Java Spring Boot"
@@ -65,7 +79,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                .NET Core (C#){" "}
+                {t("Presentacion.techDotnet")}{" "}
                 <img
                   src="/icons/dotnet-icon.svg"
                   alt=".NET Core"
@@ -74,7 +88,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                PostgreSQL{" "}
+                {t("Presentacion.techPostgres")}{" "}
                 <img
                   src="/icons/postgresql-icon.svg"
                   alt="PostgreSQL"
@@ -83,7 +97,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                MongoDB{" "}
+                {t("Presentacion.techMongo")}{" "}
                 <img
                   src="/icons/mongodb-icon.svg"
                   alt="MongoDB"
@@ -92,7 +106,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Oracle{" "}
+                {t("Presentacion.techOracle")}{" "}
                 <img
                   src="/icons/oracle-icon.svg"
                   alt="Oracle"
@@ -101,7 +115,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Docker{" "}
+                {t("Presentacion.techDocker")}{" "}
                 <img
                   src="/icons/docker-icon.svg"
                   alt="Docker"
@@ -110,7 +124,7 @@ export default function ProfilePage() {
               </span>
               ,{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Jenkins{" "}
+                {t("Presentacion.techJenkins")}{" "}
                 <img
                   src="/icons/jenkins-icon.svg"
                   alt="Jenkins"
@@ -119,36 +133,32 @@ export default function ProfilePage() {
               </span>{" "}
               y{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Git{" "}
+                {t("Presentacion.techGit")}{" "}
                 <img
                   src="/icons/git-icon.svg"
                   alt="Git"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>
-              , lo que me ha permitido desarrollar aplicaciones escalables y
-              eficientes tanto en el frontend como en el backend. Además, tengo
-              conocimientos en la gestión de tareas con{" "}
+              , {t("Presentacion.paragraph1_part6")}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Jira{" "}
+                {t("Presentacion.techJira")}{" "}
                 <img
                   src="/icons/jira-icon.svg"
                   alt="Jira"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>{" "}
-              y documentación en{" "}
+              y{" "}
               <span className="inline-flex items-center whitespace-nowrap font-bold">
-                Confluence{" "}
+                {t("Presentacion.techConfluence")}{" "}
                 <img
                   src="/icons/confluence-icon.svg"
                   alt="Confluence"
                   className="ml-1 h-4 w-4 inline"
                 />
               </span>
-              . He viajado frecuentemente a Escocia por temas personales, lo que
-              me permitió perfeccionar mi inglés y alcanzar un nivel avanzado.
-              Rendí el examen IELTS Academic en Glasgow, obteniendo un nivel B2.
+              .{t("Presentacion.paragraph1_part7")}
             </p>
           </div>
         </div>
@@ -160,45 +170,61 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Experiencia Profesional
+          {t("WorkExperience.sectionTitle")}
         </h2>
         <div className="space-y-8">
           {/* Aligare */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-              <span className="font-bold">Aligare</span>
+              <span className="font-bold">
+                {t("WorkExperience.aligare.companyName")}
+              </span>
             </h3>
             <p className="text-md italic text-gray-600 dark:text-gray-300">
-              Desarrollador <span className="font-bold">Full Stack</span>
+              {t("WorkExperience.aligare.jobTitle")}{" "}
+              <span className="font-bold">
+                {t("WorkExperience.aligare.jobTitleEmphasis")}
+              </span>
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Noviembre 2021 - Mayo 2024
+              {t("WorkExperience.aligare.date")}
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
               <li>
-                Desarrollé aplicaciones de software, estimadas y respaldadas con
-                éxito para la consultora{" "}
-                <span className="font-bold">Aligare</span> donde además trabajé
-                en proyectos para <span className="font-bold">Ripley</span>,{" "}
-                <span className="font-bold">Claro</span> y{" "}
-                <span className="font-bold">Cruz Verde</span>.
+                {t("WorkExperience.aligare.bullet1_part1")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet1_aligare")}
+                </span>
+                {t("WorkExperience.aligare.bullet1_part2")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet1_ripley")}
+                </span>
+                ,{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet1_claro")}
+                </span>{" "}
+                {t("WorkExperience.aligare.bullet1_and")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet1_cruzVerde")}
+                </span>
+                .
               </li>
               <li>
-                Implementé modelos de datos robustos y consultas optimizadas en{" "}
+                {t("WorkExperience.aligare.bullet2_part1")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  PostgreSQL{" "}
+                  {t("WorkExperience.aligare.bullet2_postgresql")}{" "}
                   <img
                     src="/icons/postgresql-icon.svg"
                     alt="PostgreSQL"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                para mejorar la gestión y recuperación de datos.
+                {t("WorkExperience.aligare.bullet2_part2")}.
               </li>
               <li>
-                Utilicé una variedad de tecnologías, incluidas{" "}
+                {t("WorkExperience.aligare.bullet3_part1")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  React{" "}
+                  {t("WorkExperience.aligare.bullet3_react")}{" "}
                   <img
                     src="/icons/react-icon.svg"
                     alt="React"
@@ -207,7 +233,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Angular{" "}
+                  {t("WorkExperience.aligare.bullet3_angular")}{" "}
                   <img
                     src="/icons/angular-icon.svg"
                     alt="Angular"
@@ -216,38 +242,50 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  NodeJS{" "}
+                  {t("WorkExperience.aligare.bullet3_nodejs")}{" "}
                   <img
                     src="/icons/nodejs-icon.svg"
                     alt="NodeJS"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                y{" "}
+                {t("WorkExperience.aligare.bullet3_and")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Java{" "}
+                  {t("WorkExperience.aligare.bullet3_java")}{" "}
                   <img
                     src="/icons/java-icon.svg"
                     alt="Java"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>
-                , para crear aplicaciones escalables y eficientes.
+                , {t("WorkExperience.aligare.bullet3_part2")}.
               </li>
               <li>
-                Desarrollé aplicaciones <span className="font-bold">Web</span> y
-                de <span className="font-bold">Escritorio</span>.
+                {t("WorkExperience.aligare.bullet4_part1")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet4_web")}
+                </span>{" "}
+                {t("WorkExperience.aligare.bullet4_and")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet4_desktop")}
+                </span>
+                .
               </li>
               <li>
-                Colaboré con diferentes equipos{" "}
-                <span className="font-bold">multifuncionales</span> para ofrecer
-                productos de software de{" "}
-                <span className="font-bold">alta calidad</span>.
+                {t("WorkExperience.aligare.bullet5_part1")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet5_crossFunctional")}
+                </span>{" "}
+                {t("WorkExperience.aligare.bullet5_part2")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.aligare.bullet5_highQuality")}
+                </span>
+                .
               </li>
               <li>
-                Habilidades Técnicas:{" "}
+                {t("WorkExperience.aligare.bullet6_part1")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  React{" "}
+                  {t("WorkExperience.aligare.bullet6_react")}{" "}
                   <img
                     src="/icons/react-icon.svg"
                     alt="React"
@@ -256,7 +294,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Angular{" "}
+                  {t("WorkExperience.aligare.bullet6_angular")}{" "}
                   <img
                     src="/icons/angular-icon.svg"
                     alt="Angular"
@@ -265,7 +303,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  JavaScript{" "}
+                  {t("WorkExperience.aligare.bullet6_javascript")}{" "}
                   <img
                     src="/icons/javascript-icon.svg"
                     alt="JavaScript"
@@ -274,7 +312,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  NodeJS{" "}
+                  {t("WorkExperience.aligare.bullet6_nodejs")}{" "}
                   <img
                     src="/icons/nodejs-icon.svg"
                     alt="NodeJS"
@@ -283,7 +321,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Spring Boot{" "}
+                  {t("WorkExperience.aligare.bullet6_springBoot")}{" "}
                   <img
                     src="/icons/springboot-icon.svg"
                     alt="Spring Boot"
@@ -292,7 +330,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  PostgreSQL{" "}
+                  {t("WorkExperience.aligare.bullet6_postgresql")}{" "}
                   <img
                     src="/icons/postgresql-icon.svg"
                     alt="PostgreSQL"
@@ -301,7 +339,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  SQLServer{" "}
+                  {t("WorkExperience.aligare.bullet6_sqlserver")}{" "}
                   <img
                     src="/icons/sql-icon.svg"
                     alt="SQLServer"
@@ -310,7 +348,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Oracle{" "}
+                  {t("WorkExperience.aligare.bullet6_oracle")}{" "}
                   <img
                     src="/icons/oracle-icon.svg"
                     alt="Oracle"
@@ -319,7 +357,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  MongoDB{" "}
+                  {t("WorkExperience.aligare.bullet6_mongodb")}{" "}
                   <img
                     src="/icons/mongodb-icon.svg"
                     alt="MongoDB"
@@ -328,7 +366,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Docker{" "}
+                  {t("WorkExperience.aligare.bullet6_docker")}{" "}
                   <img
                     src="/icons/docker-icon.svg"
                     alt="Docker"
@@ -337,7 +375,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Jenkins{" "}
+                  {t("WorkExperience.aligare.bullet6_jenkins")}{" "}
                   <img
                     src="/icons/jenkins-icon.svg"
                     alt="Jenkins"
@@ -346,7 +384,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Java 8{" "}
+                  {t("WorkExperience.aligare.bullet6_java8")}{" "}
                   <img
                     src="/icons/java-icon.svg"
                     alt="Java 8"
@@ -355,7 +393,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Git{" "}
+                  {t("WorkExperience.aligare.bullet6_git")}{" "}
                   <img
                     src="/icons/git-icon.svg"
                     alt="Git"
@@ -364,16 +402,16 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Jira{" "}
+                  {t("WorkExperience.aligare.bullet6_jira")}{" "}
                   <img
                     src="/icons/jira-icon.svg"
                     alt="Jira"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                y{" "}
+                {t("WorkExperience.aligare.bullet6_and")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Confluence{" "}
+                  {t("WorkExperience.aligare.bullet6_confluence")}{" "}
                   <img
                     src="/icons/confluence-icon.svg"
                     alt="Confluence"
@@ -388,24 +426,35 @@ export default function ProfilePage() {
           {/* Farmacias Cruz Verde Chile */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-              <span className="font-bold">Farmacias Cruz Verde Chile</span>
+              <span className="font-bold">
+                {t("WorkExperience.cruzVerde.companyName")}
+              </span>
             </h3>
             <p className="text-md italic text-gray-600 dark:text-gray-300">
-              Desarrollador <span className="font-bold">full stack</span>
+              {t("WorkExperience.cruzVerde.jobTitle")}{" "}
+              <span className="font-bold">
+                {t("WorkExperience.cruzVerde.jobTitleEmphasis")}
+              </span>
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Noviembre 2021 - Enero 2022
+              {t("WorkExperience.cruzVerde.date")}
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
               <li>
-                Desarrollé un{" "}
-                <span className="font-bold">sistema transaccional</span> para{" "}
-                <span className="font-bold">Cruz Verde Chile/Colombia</span>.
+                {t("WorkExperience.cruzVerde.bullet1_part1")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.cruzVerde.bullet1_transactionalSystem")}
+                </span>{" "}
+                {t("WorkExperience.cruzVerde.bullet1_for")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.cruzVerde.bullet1_cruzVerdeCompanies")}
+                </span>
+                .
               </li>
               <li>
-                Utilicé las siguientes tecnologías para su desarrolló:{" "}
+                {t("WorkExperience.cruzVerde.bullet2_part1")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  React Js{" "}
+                  {t("WorkExperience.cruzVerde.bullet2_reactJs")}{" "}
                   <img
                     src="/icons/react-icon.svg"
                     alt="React Js"
@@ -414,7 +463,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Node Js{" "}
+                  {t("WorkExperience.cruzVerde.bullet2_nodeJs")}{" "}
                   <img
                     src="/icons/nodejs-icon.svg"
                     alt="Node Js"
@@ -423,7 +472,7 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Sequalize{" "}
+                  {t("WorkExperience.cruzVerde.bullet2_sequelize")}{" "}
                   <img
                     src="/icons/sequelize-icon.svg"
                     alt="Sequalize"
@@ -432,16 +481,16 @@ export default function ProfilePage() {
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  AWS Lambda{" "}
+                  {t("WorkExperience.cruzVerde.bullet2_awsLambda")}{" "}
                   <img
                     src="/icons/aws-icon.svg"
                     alt="AWS Lambda"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                y{" "}
+                {t("WorkExperience.cruzVerde.bullet2_and")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Git Lab{" "}
+                  {t("WorkExperience.cruzVerde.bullet2_gitLab")}{" "}
                   <img
                     src="/icons/gitlab-icon.svg"
                     alt="Git Lab"
@@ -456,45 +505,58 @@ export default function ProfilePage() {
           {/* Ripley Chile y Peru */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-              <span className="font-bold">Ripley Chile y Peru</span>
+              <span className="font-bold">
+                {t("WorkExperience.ripley.companyName")}
+              </span>
             </h3>
             <p className="text-md italic text-gray-600 dark:text-gray-300">
-              Desarrollador <span className="font-bold">full stack</span>
+              {t("WorkExperience.ripley.jobTitle")}{" "}
+              <span className="font-bold">
+                {t("WorkExperience.ripley.jobTitleEmphasis")}
+              </span>
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Febrero 2022 - Diciembre 2023
+              {t("WorkExperience.ripley.date")}
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
               <li>
-                <span className="font-bold">Corrección de datos</span> en base
-                de datos{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.ripley.bullet1_dataCorrection")}
+                </span>{" "}
+                {t("WorkExperience.ripley.bullet1_inDatabase")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  PostgreSQL{" "}
+                  {t("WorkExperience.ripley.bullet1_postgresql")}{" "}
                   <img
                     src="/icons/postgresql-icon.svg"
                     alt="PostgreSQL"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                de producción.
+                {t("WorkExperience.ripley.bullet1_production")}.
               </li>
               <li>
-                Desarrollo de <span className="font-bold">APIs RESTful</span> en{" "}
+                {t("WorkExperience.ripley.bullet2_apiDevelopment")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Node Js{" "}
+                  {t("WorkExperience.ripley.bullet2_nodeJs")}{" "}
                   <img
                     src="/icons/nodejs-icon.svg"
                     alt="Node Js"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                para su uso en diferentes areas de{" "}
-                <span className="font-bold">Ripley</span>.
+                {t("WorkExperience.ripley.bullet2_forUseIn")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.ripley.bullet2_companyName")}
+                </span>
+                .
               </li>
               <li>
-                <span className="font-bold">Monitoreos de servicios</span> en{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.ripley.bullet3_serviceMonitoring")}
+                </span>{" "}
+                {t("WorkExperience.ripley.bullet3_in")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Jenkins{" "}
+                  {t("WorkExperience.ripley.bullet3_jenkins")}{" "}
                   <img
                     src="/icons/jenkins-icon.svg"
                     alt="Jenkins"
@@ -504,9 +566,12 @@ export default function ProfilePage() {
                 .
               </li>
               <li>
-                <span className="font-bold">Gestión de tickets</span> en{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.ripley.bullet4_ticketManagement")}
+                </span>{" "}
+                {t("WorkExperience.ripley.bullet4_in")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Jira{" "}
+                  {t("WorkExperience.ripley.bullet4_jira")}{" "}
                   <img
                     src="/icons/jira-icon.svg"
                     alt="Jira"
@@ -516,10 +581,9 @@ export default function ProfilePage() {
                 .
               </li>
               <li>
-                Crear{" "}
-                <span className="font-bold">documentación de procesos</span> en{" "}
+                {t("WorkExperience.ripley.bullet5_processDocumentation")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Confluence{" "}
+                  {t("WorkExperience.ripley.bullet5_confluence")}{" "}
                   <img
                     src="/icons/confluence-icon.svg"
                     alt="Confluence"
@@ -530,11 +594,15 @@ export default function ProfilePage() {
               </li>
               <li>
                 <span className="font-bold">
-                  Actualizaciones al software de transacciones
+                  {t("WorkExperience.ripley.bullet6_softwareUpdates")}
                 </span>{" "}
-                de <span className="font-bold">Ripley</span> desarrollado en{" "}
+                {t("WorkExperience.ripley.bullet6_of")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.ripley.bullet6_companyName")}
+                </span>{" "}
+                {t("WorkExperience.ripley.bullet6_developedIn")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Java{" "}
+                  {t("WorkExperience.ripley.bullet6_java")}{" "}
                   <img
                     src="/icons/java-icon.svg"
                     alt="Java"
@@ -549,43 +617,56 @@ export default function ProfilePage() {
           {/* Claro Chile S.A */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-              <span className="font-bold">Claro Chile S.A</span>
+              <span className="font-bold">
+                {t("WorkExperience.claro.companyName")}
+              </span>
             </h3>
             <p className="text-md italic text-gray-600 dark:text-gray-300">
-              Desarrollador <span className="font-bold">full stack</span>
+              {t("WorkExperience.claro.jobTitle")}{" "}
+              <span className="font-bold">
+                {t("WorkExperience.claro.jobTitleEmphasis")}
+              </span>
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Febrero 2024 - Mayo 2024
+              {t("WorkExperience.claro.date")}
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
               <li>
-                <span className="font-bold">Modificar software</span>{" "}
-                desarrollado en{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.claro.bullet1_modifySoftware")}
+                </span>{" "}
+                {t("WorkExperience.claro.bullet1_developedIn")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  Java 8{" "}
+                  {t("WorkExperience.claro.bullet1_java8")}{" "}
                   <img
                     src="/icons/java-icon.svg"
                     alt="Java 8"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                de <span className="font-bold">Claro</span>.
+                {t("WorkExperience.claro.bullet1_of")}{" "}
+                <span className="font-bold">
+                  {t("WorkExperience.claro.bullet1_companyName")}
+                </span>
+                .
               </li>
               <li>
-                <span className="font-bold">Agregar nueva identidad</span> al
-                software desarrollado.
+                <span className="font-bold">
+                  {t("WorkExperience.claro.bullet2_addNewIdentity")}
+                </span>{" "}
+                {t("WorkExperience.claro.bullet2_toSoftware")}.
               </li>
               <li>
-                Utilizar{" "}
+                {t("WorkExperience.claro.bullet3_use")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  GitHub{" "}
+                  {t("WorkExperience.claro.bullet3_github")}{" "}
                   <img
                     src="/icons/github-icon.svg"
                     alt="GitHub"
                     className="ml-1 h-4 w-4 inline"
                   />
                 </span>{" "}
-                para controlar las versiones.
+                {t("WorkExperience.claro.bullet3_versionControl")}.
               </li>
             </ul>
           </div>
@@ -598,21 +679,21 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Competencias
+          {t("Skills.sectionTitle")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
           <div>
             <ul className="list-disc list-inside">
-              <li>Conocimientos técnicos sólidos y en continuo crecimiento</li>
-              <li>Capacidad de solucionar problemas</li>
-              <li>Trabajo en equipo</li>
+              <li>{t("Skills.bullet1")}</li>
+              <li>{t("Skills.bullet2")}</li>
+              <li>{t("Skills.bullet3")}</li>
             </ul>
           </div>
           <div>
             <ul className="list-disc list-inside">
-              <li>Adaptabilidad para las nuevas tecnologías</li>
-              <li>Comunicación efectiva</li>
-              <li>Gestión del tiempo de las tareas a realizar</li>
+              <li>{t("Skills.bullet4")}</li>
+              <li>{t("Skills.bullet5")}</li>
+              <li>{t("Skills.bullet6")}</li>
             </ul>
           </div>
         </div>
@@ -627,12 +708,12 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Competencias Técnicas
+          {t("TechnicalSkills.sectionTitle")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700 dark:text-gray-300">
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Front-end:
+              {t("TechnicalSkills.frontendTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -657,7 +738,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Back-end:
+              {t("TechnicalSkills.backendTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -691,7 +772,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Base de Datos:
+              {t("TechnicalSkills.databaseTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -734,7 +815,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Lenguaje de Programación:
+              {t("TechnicalSkills.programmingLanguageTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -777,7 +858,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Control de Versiones:
+              {t("TechnicalSkills.versionControlTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -811,7 +892,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Cloud:
+              {t("TechnicalSkills.cloudTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -836,7 +917,7 @@ export default function ProfilePage() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-              Otros:
+              {t("TechnicalSkills.othersTitle")}
             </h3>
             <ul className="list-disc list-inside space-y-2">
               <div className="flex items-center gap-2">
@@ -864,7 +945,7 @@ export default function ProfilePage() {
                   width={35}
                   height={35}
                 />
-                Documentación con Confluence
+                {t("TechnicalSkills.confluence")}
               </div>
               <div className="flex items-center gap-2">
                 <img
@@ -873,7 +954,7 @@ export default function ProfilePage() {
                   width={35}
                   height={35}
                 />
-                Distribución y monitoreo de tareas con Jira
+                {t("TechnicalSkills.jira")}
               </div>
             </ul>
           </div>
@@ -886,10 +967,10 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Educación
+          {t("Education.sectionTitle")}
         </h2>
         <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
-          <li>Ingeniería en informática Duoc UC</li>
+          <li>{t("Education.degree")}</li>
         </ul>
         <div className="mt-4 flex gap-4">
           <a
@@ -898,14 +979,14 @@ export default function ProfilePage() {
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition"
           >
-            Ver Certificado de Titulo
+            {t("Education.viewCertificate")}
           </a>
           <a
             href="/pdf/certificado-titulo.pdf"
             download
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl transition"
           >
-            Descargar Certificado de Titulo
+            {t("Education.downloadCertificate")}
           </a>
         </div>
       </section>
@@ -916,13 +997,10 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Idioma
+          {t("Language.sectionTitle")}
         </h2>
         <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
-          <li>
-            Certificado de Inglés IELTS B2 (independiente), Examen realizado en
-            Glasgow, Scotland
-          </li>
+          <li>{t("Language.certificate")}</li>
         </ul>
         <div className="mt-4 flex gap-4">
           <a
@@ -931,14 +1009,14 @@ export default function ProfilePage() {
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl transition"
           >
-            Ver Certificado IELTS
+            {t("Language.viewCertificate")}
           </a>
           <a
             href="/pdf/certificado-ingles.pdf"
             download
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl transition"
           >
-            Descargar Certificado IELTS
+            {t("Language.downloadCertificate")}
           </a>
         </div>
       </section>
@@ -952,73 +1030,43 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Carta de Recomendaciones
+          {t("Recommendations.sectionTitle")}
         </h2>
 
         {/* Recommendation 1: Juan Patricio Rojas Morales */}
         <div className="bg-gray-100 p-6 rounded-lg shadow-md mb-8 dark:bg-gray-700 dark:shadow-lg">
           <p className="text-sm text-gray-500 mb-4 dark:text-gray-400">
-            Santiago de Chile, 09 de Julio de 2024
+            {t("Recommendations.jprm.date")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Estimados, Me complace escribir esta carta de recomendación para
-            Emmanuel Morales Inzunza, quien ha trabajado como Ingeniero
-            Informático en Ripley.com bajo mi supervisión directa, en el área de
-            Gestión de Servicios Transaccionales a nivel Corporativo (Chile -
-            Perú). Durante su tiempo con nosotros, Emmanuel ha demostrado ser un
-            profesional excepcional, contribuyendo significativamente al
-            desarrollo de nuestra área de tecnología.
+            {t("Recommendations.jprm.paragraph1")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Emmanuel posee un manejo sobresaliente de las tecnologías más
-            recientes y una capacidad notable para adaptarse rápidamente a
-            nuevos sistemas y herramientas. Su habilidad para analizar y
-            resolver problemas técnicos es impresionante, y a menudo ha ofrecido
-            soluciones innovadoras y efectivas a desafíos complejos. Su enfoque
-            analítico y detallado asegura que cualquier proyecto en el que
-            trabaja se realice con precisión y calidad.
+            {t("Recommendations.jprm.paragraph2")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Una de las cualidades más destacadas de Emmanuel es su proactividad.
-            No solo cumple con sus tareas asignadas, sino que constantemente
-            busca maneras de mejorar procesos y optimizar el rendimiento de
-            nuestros sistemas. Esta iniciativa ha sido invaluable para nuestra
-            empresa, y su disposición para asumir responsabilidades adicionales
-            ha sido ampliamente apreciada.
+            {t("Recommendations.jprm.paragraph3")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Además, Emmanuel es conocido por su capacidad para trabajar en
-            equipo. Colabora eficazmente con sus compañeros, compartiendo
-            conocimientos y apoyando a los demás para alcanzar los objetivos
-            comunes. Su capacidad para comunicarse claramente y trabajar en
-            conjunto con otros departamentos ha sido crucial para el éxito de
-            nuestros proyectos.
+            {t("Recommendations.jprm.paragraph4")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Emmanuel también se destaca por su esfuerzo y cumplimiento de
-            tiempos. Siempre ha demostrado un compromiso inquebrantable para
-            cumplir con los plazos establecidos, asegurando que los proyectos se
-            completen de manera oportuna y sin comprometer la calidad del
-            trabajo. Su ética de trabajo y dedicación son ejemplares.
+            {t("Recommendations.jprm.paragraph5")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            En resumen, Emmanuel Morales ha sido un gran aporte para el
-            desarrollo de nuestra área de tecnología durante su tiempo en
-            nuestra empresa. Su profesionalismo, habilidades técnicas y actitud
-            proactiva lo convierten en un activo valioso para cualquier equipo.
-            Dado el alto nivel de desempeño que ha demostrado, no dudaría en
-            trabajar nuevamente con él en el futuro.
+            {t("Recommendations.jprm.paragraph6")}
           </p>
-          <p className="text-gray-700 mb-2 dark:text-gray-200">Atentamente,</p>
+          <p className="text-gray-700 mb-2 dark:text-gray-200">
+            {t("Recommendations.jprm.closing")}
+          </p>
           <p className="font-semibold text-gray-800 dark:text-gray-100">
-            Juan Patricio Rojas Morales | Empresas Ripley
+            {t("Recommendations.jprm.name")}
           </p>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Defect Manager & Líder de Gestion De Servicios Transaccionales Corp.
-            Gerencia Continuidad Operacional y QA
+            {t("Recommendations.jprm.title")}
           </p>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Alonso de Cordoba 5320, Piso 9. Las Condes - Santiago - Chile.
+            {t("Recommendations.jprm.address")}
           </p>
           <p className="text-sm text-gray-700 dark:text-gray-300">
             jrojasmo@ripley.com | +56 984577319
@@ -1028,43 +1076,28 @@ export default function ProfilePage() {
         {/* Recommendation 2: Richard Casas */}
         <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
           <p className="text-sm text-gray-500 mb-4 dark:text-gray-400">
-            11 de julio de 2024, 9:53
+            {t("Recommendations.rc.date")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            A quien corresponda, Tengo el agrado de recomendar a Emmanuel
-            Morales, quien trabajó conmigo desde febrero de 2021 en Consultora
-            Tecnológica Aligare, hasta mayo de este año. Durante este tiempo,
-            Emmanuel demostró ser un profesional comprometido y una pieza clave
-            para nuestro equipo.
+            {t("Recommendations.rc.paragraph1")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Emmanuel tuvo una excelente disposición y una gran capacidad de
-            aprendizaje, lo que le permitió adaptarse rápidamente a nuevos
-            desafíos tanto personales como tecnológicos. Su habilidad para
-            trabajar en equipo fue sobresaliente, colaborando eficazmente con
-            sus compañeros y manteniendo una relación fluida y profesional con
-            nuestros clientes.
+            {t("Recommendations.rc.paragraph2")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            Además, Emmanuel mostró una buena capacidad de análisis, autonomía y
-            gran responsabilidad. Estas cualidades le permitieron abordar y
-            resolver problemas de manera eficiente, cumpliendo siempre con los
-            plazos establecidos y manteniendo un alto nivel de calidad en su
-            trabajo.
+            {t("Recommendations.rc.paragraph3")}
           </p>
           <p className="text-gray-700 mb-4 dark:text-gray-200">
-            En resumen, considero que Emmanuel Morales sería una excelente
-            incorporación para cualquier equipo y estoy seguro de que continuará
-            sobresaliendo en cualquier proyecto que emprenda. Estoy a su
-            disposición para proporcionar cualquier información adicional que
-            pueda necesitar.
+            {t("Recommendations.rc.paragraph4")}
           </p>
-          <p className="text-gray-700 mb-2 dark:text-gray-200">Atentamente,</p>
+          <p className="text-gray-700 mb-2 dark:text-gray-200">
+            {t("Recommendations.rc.closing")}
+          </p>
           <p className="font-semibold text-gray-800 dark:text-gray-100">
-            Richard Casas Farias
+            {t("Recommendations.rc.name")}
           </p>
           <p className="text-sm text-gray-700 dark:text-gray-300">
-            Gerente de Operaciones
+            {t("Recommendations.rc.title")}
           </p>
           <p className="text-sm text-gray-700 dark:text-gray-300">
             Alcántara N°44, Piso 7, Las Condes, www.aligare.cl, +56 2 22320303,
@@ -1079,7 +1112,7 @@ export default function ProfilePage() {
         <h2
           className={`${inter.className} text-3xl font-bold mb-4 text-gray-900 dark:text-white`}
         >
-          Redes Sociales
+          {t("SocialNetworks.sectionTitle")}
         </h2>
         <div className="flex flex-col sm:flex-row gap-4 text-gray-700 dark:text-gray-300">
           <a
@@ -1110,10 +1143,7 @@ export default function ProfilePage() {
           </a>
         </div>
         <br />
-        <h2 className="bold">
-          Futuros proyectos seran publicados, de momento estan siendo
-          desarrollados y puedes ver su progreso en GitHub !
-        </h2>
+        <h2 className="bold">{t("SocialNetworks.futureProjects")}</h2>
       </section>
     </div>
   );
