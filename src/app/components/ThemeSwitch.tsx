@@ -1,11 +1,8 @@
 "use client";
 
-import { FiSun, FiMoon } from "react-icons/fi";
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
 import { FormControlLabel, styled, Switch } from "@mui/material";
-import { log } from "console";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import SwitchSkeleton from "../ui/SkitchSkeleton";
 
 const MaterialUISwitch = styled(Switch)(({}) => ({
