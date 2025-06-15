@@ -112,8 +112,10 @@ export default function Top() {
             </p>
           </div>
         </div>
-        <ThemeSwitch />
-        <LanguageSelector />
+        <div className="flex gap-2 items-center grid grid-cols-1 sm:grid-cols-2 content-center justify-center">
+          <ThemeSwitch />
+          <LanguageSelector />
+        </div>
       </div>
       <div ref={ref}>
         <hr className="h-px dark:bg-gray-200 border-0 bg-black" />
