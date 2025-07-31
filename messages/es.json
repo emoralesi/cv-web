@@ -214,7 +214,7 @@
       "futureProjects": "Futuros proyectos seran tambien publicados, de momento estan siendo desarrollados y puedes ver su progreso en GitHub !",
       "visit": "Visitar sitio",
       "proyect_1": {
-        "description": "Sitio web donde podrás crear y compartir tus mejores recetas de comida con otros usuarios. Puedes comentar, reaccionar y guardar tus recetas favoritas.",
+        "description": "Un currículum interactivo en línea que muestra mi experiencia profesional, habilidades y proyectos destacados.",
         "tecnologies": "Tecnologías: Next.js, React 19, TypeScript, Tailwind CSS, Material UI (MUI), next-intl, next-themes, Vercel"
       },
       "proyect_2": {
