@@ -1143,7 +1143,86 @@ export default function ProfilePage() {
           </a>
         </div>
         <br />
-        <h2 className="bold">{t("SocialNetworks.futureProjects")}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          {t("SocialNetworks.sectionSubTitle")}
+        </h2>
+
+        {/* Proyectos */}
+        <div className="mt-4 space-y-6">
+          {/* Proyecto 1 */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-md">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              CV Online
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mt-1">
+              {t("SocialNetworks.proyect_1.description")}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+             {t("SocialNetworks.proyect_1.tecnologies")}
+            </p>
+            <div className="mt-2 flex flex-wrap gap-4">
+              <a
+                href="https://cv-9vk8pgu5y-emoralesis-projects.vercel.app/es/profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+              {t("SocialNetworks.visit")}
+              </a>
+              <a
+                href="https://github.com/emoralesi/cv-web"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                GitHub Frontend
+              </a>
+            </div>
+          </div>
+
+          {/* Proyecto 2 */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-md">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              Kitchen Blog
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mt-1">
+              {t("SocialNetworks.proyect_2.description")}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              {t("SocialNetworks.proyect_2.tecnologies")}
+            </p>
+            <div className="mt-2 flex flex-wrap gap-4">
+              <a
+                href="https://kitchen-blog-front.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                {t("SocialNetworks.visit")}
+              </a>
+              <a
+                href="https://github.com/emoralesi/KitchenBlogFront"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                GitHub Frontend
+              </a>
+              <a
+                href="https://github.com/emoralesi/KitchenBlogBack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                GitHub Backend
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          {t("SocialNetworks.futureProjects")}
+        </h2>
       </section>
     </div>
   );

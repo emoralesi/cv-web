@@ -210,7 +210,17 @@
     },
     "SocialNetworks": {
       "sectionTitle": "Social Networks",
-      "futureProjects": "Future projects will be published; they are currently under development, and you can see their progress on GitHub!"
+      "sectionSubTitle": "Developed Projects",
+      "futureProjects": "Future projects will be published; they are currently under development, and you can see their progress on GitHub!",
+      "visit": "Visit web site",
+      "proyect_1": {
+        "description": "An interactive online resume that showcases my professional experience, skills, and notable projects.",
+        "tecnologies": "Technologies: Next.js, React 19, TypeScript, Tailwind CSS, Material UI (MUI), next-intl, next-themes, Vercel"
+      },
+      "proyect_2": {
+        "description": "Website where you can create and share your best recipes with other users. You can comment, react, and save your favorite recipes.",
+        "tecnologies": "Technologies: React 18, Vite, Material UI, Emotion, Framer Motion, Cloudinary, React Router, MongoDB, Express, Node.js, JWT, SSE"
+      }
     }
   },
   "Footer": {
