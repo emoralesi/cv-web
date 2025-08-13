@@ -6,7 +6,7 @@ export default function FloatingCV() {
   return (
     <div className="fixed bottom-6 right-6 flex gap-4 z-50">
       <a
-        href="/pdf/CV_Emmanuel_Morales_I.pdf"
+        href={t("button1Link")}
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-colors duration-300"
@@ -15,7 +15,7 @@ export default function FloatingCV() {
       </a>
 
       <a
-        href="/pdf/CV_Emmanuel_Morales_I.pdf"
+        href={t("button1Link")}
         download
         className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-colors duration-300"
       >
