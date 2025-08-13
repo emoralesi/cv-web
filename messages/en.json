@@ -230,6 +230,7 @@
   },
   "position-fixed-cv": {
     "button1": "View CV",
+    "button1Link": "/pdf/CV_Emmanuel_Morales_I_EN.pdf",
     "button2": "Download CV"
   }
 }
