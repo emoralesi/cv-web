@@ -173,6 +173,38 @@ export default function ProfilePage() {
           {t("WorkExperience.sectionTitle")}
         </h2>
         <div className="space-y-8">
+          {/* English Proficiency */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              <span className="font-bold">
+                {t("WorkExperience.english.companyName")}
+              </span>
+            </h3>
+            <p className="text-md italic text-gray-600 dark:text-gray-300">
+              {t("WorkExperience.english.level")}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {t("WorkExperience.english.date")}
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
+              <li>{t("WorkExperience.english.course")}</li>
+              <li>
+                {t("WorkExperience.english.ielts")} –{" "}
+                <span className="font-bold">{t("WorkExperience.english.ieltsLevel")}</span>
+              </li>
+              <li>
+                <span className="font-bold">{t("WorkExperience.english.speaking")}</span>{" "}
+                6.5 |{" "}
+                <span className="font-bold">{t("WorkExperience.english.reading")}</span>{" "}
+                6 |{" "}
+                <span className="font-bold">{t("WorkExperience.english.listening")}</span>{" "}
+                6 |{" "}
+                <span className="font-bold">{t("WorkExperience.english.writing")}</span>{" "}
+                6
+              </li>
+            </ul>
+          </div>
+
           {/* Aligare */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">

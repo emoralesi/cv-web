@@ -40,6 +40,18 @@
     },
     "WorkExperience": {
       "sectionTitle": "Experiencia Profesional",
+      "english": {
+        "companyName": "Inglés",
+        "level": "B2 – Intermedio Alto",
+        "date": "Junio 2024 – Enero 2025",
+        "course": "Curso intensivo de inglés",
+        "ielts": "IELTS Academic (15 de junio de 2024)",
+        "ieltsLevel": "Nivel B2",
+        "speaking": "Speaking:",
+        "reading": "Reading:",
+        "listening": "Listening:",
+        "writing": "Writing:"
+      },
       "aligare": {
         "companyName": "Aligare",
         "jobTitle": "Desarrollador",
