@@ -40,6 +40,18 @@
     },
     "WorkExperience": {
       "sectionTitle": "Professional Experience",
+      "english": {
+        "companyName": "English Proficiency",
+        "level": "B2 – Upper Intermediate",
+        "date": "June 2024 – January 2025",
+        "course": "Intensive English Course",
+        "ielts": "IELTS Academic (June 15, 2024)",
+        "ieltsLevel": "B2 Level",
+        "speaking": "Speaking:",
+        "reading": "Reading:",
+        "listening": "Listening:",
+        "writing": "Writing:"
+      },
       "aligare": {
         "companyName": "Aligare",
         "jobTitle": "Full Stack",
