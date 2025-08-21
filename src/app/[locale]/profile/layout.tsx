@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Footer from "@/app/components/Footer";
 import FloatingCV from "@/app/components/FloatingCV";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: "Emmanuel Morales CV",
@@ -33,12 +34,13 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <ViewProvider>
               <Top />
-              <FloatingCV/>
+              <FloatingCV />
               <main>{children}</main>
             </ViewProvider>
             <Footer />
           </NextIntlClientProvider>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
