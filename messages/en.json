@@ -40,6 +40,14 @@
     },
     "WorkExperience": {
       "sectionTitle": "Professional Experience",
+      "personalProject": {
+        "companyName": "Personal project",
+        "jobTitle": "Full Stack",
+        "jobTitleEmphasis": "Developer",
+        "date": "February 2025 – June 2025",
+        "bullet1": "I designed the database, back-end, and front-end of the website.",
+        "bullet2": "Tecnologies : "
+      },
       "english": {
         "companyName": "English Proficiency",
         "level": "B2 – Upper Intermediate",
