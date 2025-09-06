@@ -40,6 +40,14 @@
     },
     "WorkExperience": {
       "sectionTitle": "Experiencia Profesional",
+      "personalProject": {
+        "companyName": "Proyecto Personal",
+        "jobTitle": "Full Stack",
+        "jobTitleEmphasis": "Developer",
+        "date": "Febrero 2025 – Junio 2025",
+        "bullet1": "Diseñé la base de datos, el backend y el frontend del sitio web.",
+        "bullet2": "Tecnologías utilizadas: "
+      },
       "english": {
         "companyName": "Inglés",
         "level": "B2 – Intermedio Alto",

@@ -173,6 +173,42 @@ export default function ProfilePage() {
           {t("WorkExperience.sectionTitle")}
         </h2>
         <div className="space-y-8">
+          {/* Proyecto Personal Feb 2025 - Jun 2025 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              <span className="font-bold">{t("WorkExperience.personalProject.companyName")}</span>
+            </h3>
+            <p className="text-md italic text-gray-600 dark:text-gray-300">
+              {t("WorkExperience.personalProject.jobTitle")}{" "}
+              <span className="font-bold">{t("WorkExperience.personalProject.jobTitleEmphasis")}</span>{" "}
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {t("WorkExperience.personalProject.date")}
+              </p>
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
+              <li>{t("WorkExperience.personalProject.bullet1")}</li>
+              <li>
+                {t("WorkExperience.personalProject.bullet2")}{" "}
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  React 18 <img src="/icons/react-icon.svg" alt="React" className="ml-1 h-4 w-4 inline" />
+                </span>
+                , Vite, Material UI, Emotion, Framer Motion, Cloudinary, React Router,{" "}
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  MongoDB <img src="/icons/mongodb-icon.svg" alt="MongoDB" className="ml-1 h-4 w-4 inline" />
+                </span>
+                ,{" "}
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  Express <img src="/icons/express-icon.svg" alt="Express" className="ml-1 h-4 w-4 inline" />
+                </span>
+                ,{" "}
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  Node.js <img src="/icons/nodejs-icon.svg" alt="NodeJS" className="ml-1 h-4 w-4 inline" />
+                </span>
+                , JWT, SSE.
+              </li>
+            </ul>
+          </div>
+
           {/* English Proficiency */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
