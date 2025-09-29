@@ -40,13 +40,23 @@
     },
     "WorkExperience": {
       "sectionTitle": "Experiencia Profesional",
+      "personalProject2": {
+        "companyName": "Role Manager App",
+        "jobTitle": "Full Stack",
+        "jobTitleEmphasis": "Developer",
+        "date": "Junio 2025 – Agosto 2025",
+        "bullet1": "Diseñé la base de datos, el backend y el frontend del sitio web.",
+        "bullet2": "Tecnologies : ",
+        "bullet3": "Web Site: "
+      },
       "personalProject": {
-        "companyName": "Proyecto Personal",
+        "companyName": "Kitchen Blog",
         "jobTitle": "Full Stack",
         "jobTitleEmphasis": "Developer",
         "date": "Febrero 2025 – Junio 2025",
         "bullet1": "Diseñé la base de datos, el backend y el frontend del sitio web.",
-        "bullet2": "Tecnologías utilizadas: "
+        "bullet2": "Tecnologías utilizadas: ",
+        "bullet3": "Web Site: "
       },
       "english": {
         "companyName": "Inglés",
@@ -240,6 +250,10 @@
       "proyect_2": {
         "description": "Sitio web donde podrás crear y compartir tus mejores recetas de comida con otros usuarios. Puedes comentar, reaccionar y guardar tus recetas favoritas.",
         "tecnologies": "Tecnologías: React 18, Vite, Material UI, Emotion, Framer Motion, Cloudinary, React Router, MongoDB, Express, Node.js, JWT, SSE"
+      },
+      "proyect_3": {
+        "description": "Sitio web donde el cliente puede gestionar varias partes de su negocio, incluyendo la administración de usuarios con roles personalizados.",
+        "tecnologies": "Tecnologias: React 19, Next.js, Material UI, Node.js, Express, Typescript, JWT, PostgreSQL"
       }
     }
   },
