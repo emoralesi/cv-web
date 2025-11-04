@@ -13,7 +13,7 @@
   "Page": {
     "Presentacion": {
       "sectionTitle": "Summary",
-      "paragraph1_part1": "Full-Stack developer with over 3 years of experience, highly motivated, with strong technical background and proven ability to adapt to new technologies. I have worked at the consultancy ",
+      "paragraph1_part1": "Full-Stack developer with 4 years of experience, highly motivated, with strong technical background and proven ability to adapt to new technologies. I have worked at the consultancy ",
       "companyAligare": "Aligare",
       "paragraph1_part2": ", participating in projects for companies such as ",
       "companyCruzVerde": "Cruz Verde",
@@ -40,6 +40,15 @@
     },
     "WorkExperience": {
       "sectionTitle": "Professional Experience",
+      "gea": {
+        "companyName": "Asistencia GEA CHILE S.A",
+        "jobTitle": "Call Center Operator",
+        "jobTitleEmphasis": "Customer Service",
+        "date": "November 2025 – Present",
+        "bullet1": "Answer incoming calls from customers requiring post-sales assistance.",
+        "bullet2": "Manage support tickets in the internal system.",
+        "bullet3": "Resolve customer issues and inquiries efficiently and professionally."
+      },
       "personalProject2": {
         "companyName": "Role Manager App",
         "jobTitle": "Full Stack",

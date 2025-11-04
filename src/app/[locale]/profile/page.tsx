@@ -174,6 +174,30 @@ export default function ProfilePage() {
         </h2>
         <div className="space-y-8">
 
+          {/* GEA  Septiembre 2025 - Hoy */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              <span className="font-bold">{t("WorkExperience.gea.companyName")}</span>
+            </h3>
+            <p className="text-md italic text-gray-600 dark:text-gray-300">
+              {t("WorkExperience.gea.jobTitle")}{" "}
+              <span className="font-bold">{t("WorkExperience.gea.jobTitleEmphasis")}</span>{" "}
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {t("WorkExperience.gea.date")}
+              </p>
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
+              <li>{t("WorkExperience.gea.bullet1")}</li>
+              <li>
+                {t("WorkExperience.gea.bullet2")}{" "}
+              </li>
+              <li>
+                {t("WorkExperience.gea.bullet3")}
+                
+              </li>
+            </ul>
+          </div>
+
           {/* Role Manager App  Junio 2025 - Agosto 2025 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
