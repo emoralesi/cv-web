@@ -13,7 +13,7 @@
   "Page": {
     "Presentacion": {
       "sectionTitle": "Presentación",
-      "paragraph1_part1": "Desarrollador Full-Stack con más de 3 años de experiencia, altamente motivado, con una sólida formación técnica y capacidad comprobada para adaptarse a nuevas tecnologías. He trabajado en la consultora ",
+      "paragraph1_part1": "Desarrollador Full-Stack con 4 años de experiencia, altamente motivado, con una sólida formación técnica y capacidad comprobada para adaptarse a nuevas tecnologías. He trabajado en la consultora ",
       "companyAligare": "Aligare",
       "paragraph1_part2": ", donde participé en proyectos para empresas como ",
       "companyCruzVerde": "Cruz Verde",
@@ -40,6 +40,15 @@
     },
     "WorkExperience": {
       "sectionTitle": "Experiencia Profesional",
+      "gea": {
+        "companyName": "Asistencia GEA CHILE S.A",
+        "jobTitle": "Operador de Call Center",
+        "jobTitleEmphasis": "Atención al Cliente",
+        "date": "Noviembre 2025 – hasta la fecha",
+        "bullet1": "Atender llamadas entrantes de clientes que requieren asistencia Post Venta.",
+        "bullet2": "Gestion de Tickets en sistema interno.",
+        "bullet3": "Resolución de problemas y consultas de clientes de manera eficiente y profesional."
+      },
       "personalProject2": {
         "companyName": "Role Manager App",
         "jobTitle": "Full Stack",
