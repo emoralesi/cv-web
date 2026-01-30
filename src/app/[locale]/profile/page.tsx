@@ -193,7 +193,7 @@ export default function ProfilePage() {
               </li>
               <li>
                 {t("WorkExperience.gea.bullet3")}
-                
+
               </li>
             </ul>
           </div>
@@ -254,6 +254,7 @@ export default function ProfilePage() {
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
               <li>{t("WorkExperience.personalProject.bullet1")}</li>
+              <li>{t("WorkExperience.personalProject.bullet1_5")}</li>
               <li>
                 {t("WorkExperience.personalProject.bullet2")}{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
@@ -1079,6 +1080,15 @@ export default function ProfilePage() {
                   height={35}
                 />
                 Docker
+              </div>
+              <div className="flex items-center gap-2">
+                <img
+                  src="/icons/ia-icon.svg"
+                  alt="IALogo"
+                  width={35}
+                  height={35}
+                />
+                IA
               </div>
               <div className="flex items-center gap-2">
                 <img

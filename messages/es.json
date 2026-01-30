@@ -36,7 +36,7 @@
       "paragraph1_part6": ", lo que me ha permitido desarrollar aplicaciones escalables y eficientes tanto en el frontend como en el backend. Además, tengo conocimientos en la gestión de tareas con ",
       "techJira": "Jira",
       "techConfluence": "Confluence",
-      "paragraph1_part7": ". He viajado frecuentemente a Escocia por temas personales, lo que me permitió perfeccionar mi inglés y alcanzar un nivel avanzado. Rendí el examen IELTS Academic en Glasgow, obteniendo un nivel B2."
+      "paragraph1_part7": " Actualmente profundizando en mi Ingles (Certificado IETLS B2), servicios AWS (EC2, S3, Lambda) y la implementación de IA en proyectos web."
     },
     "WorkExperience": {
       "sectionTitle": "Experiencia Profesional",
@@ -44,7 +44,7 @@
         "companyName": "Asistencia GEA CHILE S.A",
         "jobTitle": "Operador de Call Center",
         "jobTitleEmphasis": "Atención al Cliente",
-        "date": "Noviembre 2025 – hasta la fecha",
+        "date": "Noviembre 2025 – Enero 2026",
         "bullet1": "Atender llamadas entrantes de clientes que requieren asistencia Post Venta.",
         "bullet2": "Gestion de Tickets en sistema interno.",
         "bullet3": "Resolución de problemas y consultas de clientes de manera eficiente y profesional."
@@ -64,6 +64,7 @@
         "jobTitleEmphasis": "Developer",
         "date": "Febrero 2025 – Junio 2025",
         "bullet1": "Diseñé la base de datos, el backend y el frontend del sitio web.",
+        "bullet1_5": "Implementé integración con API IA para la creación de recetas utilizando inteligencia artificial.",
         "bullet2": "Tecnologías utilizadas: ",
         "bullet3": "Web Site: "
       },
