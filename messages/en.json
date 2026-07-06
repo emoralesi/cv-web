@@ -40,11 +40,20 @@
     },
     "WorkExperience": {
       "sectionTitle": "Professional Experience",
+      "personalProject3": {
+        "companyName": "Ticketing Master",
+        "jobTitle": "Full Stack",
+        "jobTitleEmphasis": "Developer",
+        "date": "March 2026 – May 2026",
+        "bullet1": "I designed the database, back-end, and front-end of the website.",
+        "bullet2": "Tecnologies : ",
+        "bullet3": "Web Site: "
+      },
       "gea": {
         "companyName": "Asistencia GEA CHILE S.A",
         "jobTitle": "Call Center Operator",
         "jobTitleEmphasis": "Customer Service",
-        "date": "November 2025 – Present",
+        "date": "October 2025 – December 2025",
         "bullet1": "Answer incoming calls from customers requiring post-sales assistance.",
         "bullet2": "Manage support tickets in the internal system.",
         "bullet3": "Resolve customer issues and inquiries efficiently and professionally."
@@ -264,6 +273,10 @@
       "proyect_3": {
         "description": "Website where clients can manage various aspects, including user management with customizable roles.",
         "tecnologies": "Technologies: React 19, Next.js, Material UI, Node.js, Express, Typescript, JWT, PostgreSQL"
+      },
+      "proyect_4": {
+        "description": "Website where clients can purchase tickets for events. The backend is responsible for validating payments, running a CI for ticket expiration, releasing seat inventory, and reconciling payments.",
+        "tecnologies": "Technologies: React 19, Next.js, Tailwind CSS, Nest.Js, Node.js, Typescript, Type ORM, PostgreSQL"
       }
     }
   },

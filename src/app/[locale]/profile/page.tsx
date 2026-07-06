@@ -173,6 +173,45 @@ export default function ProfilePage() {
           {t("WorkExperience.sectionTitle")}
         </h2>
         <div className="space-y-8">
+          {/* Ticketing Master  Marzo 2026 - Mayo 2026 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+              <span className="font-bold">{t("WorkExperience.personalProject3.companyName")}</span>
+            </h3>
+            <p className="text-md italic text-gray-600 dark:text-gray-300">
+              {t("WorkExperience.personalProject3.jobTitle")}{" "}
+              <span className="font-bold">{t("WorkExperience.personalProject3.jobTitleEmphasis")}</span>{" "}
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {t("WorkExperience.personalProject3.date")}
+              </p>
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 dark:text-gray-300">
+              <li>{t("WorkExperience.personalProject3.bullet1")}</li>
+              <li>
+                {t("WorkExperience.personalProject3.bullet2")}{" "}
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  React 19 <img src="/icons/react-icon.svg" alt="React" className="ml-1 h-4 w-4 inline" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  , Next.js 16 <img src="/next.svg" alt="Next.js" className="ml-1 h-4 w-4 inline" />
+                </span>
+
+                , TypeScript, Tailwind CSS 4, Type ORM, GitHub CI/CD <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  Nest.js <img src="/icons/nestjs-icon.svg" alt="NestJS" className="ml-1 h-4 w-4 inline" />
+                </span>
+                , <span className="inline-flex items-center whitespace-nowrap font-bold">
+                  PostgreSQL <img src="/icons/postgresql-icon.svg" alt="PostgreSQL" className="ml-1 h-4 w-4 inline" />
+                </span>
+              </li>
+              <li>
+                {t("WorkExperience.personalProject3.bullet3")}
+                <a href="https://role-manager-front-umber.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>
+                  https://ticketing-master-frontend.vercel.app/events
+                </a>
+
+              </li>
+            </ul>
+          </div>
 
           {/* GEA  Septiembre 2025 - Hoy */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-700 dark:shadow-lg">
@@ -219,7 +258,7 @@ export default function ProfilePage() {
                 </span>
                 , NextJS, Typescript, Material UI,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
-                  PostgreSQL <img src="/icons/mongodb-icon.svg" alt="MongoDB" className="ml-1 h-4 w-4 inline" />
+                  PostgreSQL <img src="/icons/postgresql-icon.svg" alt="PostgreSQL" className="ml-1 h-4 w-4 inline" />
                 </span>
                 ,{" "}
                 <span className="inline-flex items-center whitespace-nowrap font-bold">
@@ -1507,6 +1546,91 @@ export default function ProfilePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 font-semibold hover:underline"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577
+        0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
+        -1.09-.745.083-.73.083-.73 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997
+        .107-.776.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.933 0-1.31.47-2.38 1.236-3.22
+        -.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.48 11.48 0 013.003-.404
+        c1.018.004 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176
+        .77.84 1.235 1.91 1.235 3.22 0 4.61-2.803 5.63-5.475 5.922.43.37.814 1.103.814 2.222
+        0 1.606-.015 2.9-.015 3.293 0 .32.19.694.8.576C20.565 21.796 24 17.3 24 12
+        c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub Backend
+              </a>
+            </div>
+          </div>
+
+          {/* Proyecto 4 */}
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-transparent hover:border-gradient-to-r hover:from-yellow-400 hover:via-orange-500 hover:to-red-600">
+            <h3 className="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">
+              Ticketing Master App
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+              {t("SocialNetworks.proyect_4.description")}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 italic">
+              {t("SocialNetworks.proyect_4.tecnologies")}
+            </p>
+            <div className="flex flex-wrap gap-5">
+              <a
+                href="https://ticketing-master-frontend.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-yellow-600 dark:text-cyan-400 font-semibold hover:underline"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+                {t("SocialNetworks.visit")}
+              </a>
+              <a
+                href="https://github.com/emoralesi/ticketing-master-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-yellow-600 dark:text-cyan-400 font-semibold hover:underline"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577
+        0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
+        -1.09-.745.083-.73.083-.73 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997
+        .107-.776.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.933 0-1.31.47-2.38 1.236-3.22
+        -.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.48 11.48 0 013.003-.404
+        c1.018.004 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176
+        .77.84 1.235 1.91 1.235 3.22 0 4.61-2.803 5.63-5.475 5.922.43.37.814 1.103.814 2.222
+        0 1.606-.015 2.9-.015 3.293 0 .32.19.694.8.576C20.565 21.796 24 17.3 24 12
+        c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub Frontend
+              </a>
+              <a
+                href="https://github.com/emoralesi/ticketing-master-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-yellow-600 dark:text-cyan-400 font-semibold hover:underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
