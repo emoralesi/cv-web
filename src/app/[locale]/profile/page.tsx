@@ -205,8 +205,8 @@ export default function ProfilePage() {
               </li>
               <li>
                 {t("WorkExperience.personalProject3.bullet3")}
-                <a href="https://role-manager-front-umber.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>
-                  https://ticketing-master-frontend.vercel.app/events
+                <a href="https://ticketing-master-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>
+                  https://ticketing-master-frontend.vercel.app/
                 </a>
 
               </li>
